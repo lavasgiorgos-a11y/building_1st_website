@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annita Tiki | Musician, Author, Life Coach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#b08f5c',
+            dark: '#2a2a2a',
+            light: '#f9f9f9',
+            offwhite: '#fdfdfd'
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .active-link {
+      color: #b08f5c;
+    }
+    .active-link::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: #b08f5c;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body class="bg-offwhite text-dark">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-offwhite/80 backdrop-blur border-b border-light">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="text-xl font-semibold tracking-wide">Annita Tiki</a>
+        <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wide">
+          <a href="#home" class="nav-link py-2 transition-colors">Αρχική</a>
+          <a href="#about" class="nav-link py-2 transition-colors">Σχετικά</a>
+          <a href="#book" class="nav-link py-2 transition-colors">Το Βιβλίο</a>
+          <a href="#services" class="nav-link py-2 transition-colors">Υπηρεσίες</a>
+          <a href="#events" class="nav-link py-2 transition-colors">Εκδηλώσεις & Τύπος</a>
+          <a href="#contact" class="nav-link py-2 transition-colors">Επικοινωνία</a>
+        </nav>
+        <button id="menuToggle" class="md:hidden p-2 focus:outline-none" aria-label="Toggle menu">
+          <span class="block w-6 h-0.5 bg-dark mb-1"></span>
+          <span class="block w-6 h-0.5 bg-dark mb-1"></span>
+          <span class="block w-6 h-0.5 bg-dark"></span>
+        </button>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden border-t border-light pb-4">
+        <nav class="flex flex-col space-y-3 pt-4 text-sm uppercase tracking-wide">
+          <a href="#home" class="nav-link">Αρχική</a>
+          <a href="#about" class="nav-link">Σχετικά</a>
+          <a href="#book" class="nav-link">Το Βιβλίο</a>
+          <a href="#services" class="nav-link">Υπηρεσίες</a>
+          <a href="#events" class="nav-link">Εκδηλώσεις & Τύπος</a>
+          <a href="#contact" class="nav-link">Επικοινωνία</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="pt-20">
+    <section id="home" class="min-h-screen flex items-center">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-up" class="space-y-6">
+          <p class="uppercase text-sm tracking-[0.3em] text-brand">Musician • Author • Life Coach</p>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">Η μουσική της ψυχής, οι λέξεις της καρδιάς.</h1>
+          <p class="text-lg leading-relaxed text-gray-700">Annita Tiki is a multifaceted artist, author, and life transformation guide based in Greece. Through her powerful book, inspiring life coaching approach, and passion for music, she helps people discover their inner strength and create authentic, meaningful lives.</p>
+          <a href="#book" class="inline-flex items-center px-6 py-3 bg-brand text-white uppercase tracking-wide text-sm rounded-full shadow-sm transition-transform transform hover:-translate-y-0.5">Ανακάλυψε το Βιβλίο</a>
+        </div>
+        <div data-aos="fade-up" class="flex justify-center">
+          <img src="https://placehold.co/600x700/f0f0f0/b08f5c?text=Annita+Tiki" alt="Annita Tiki" class="rounded-3xl shadow-2xl w-full max-w-sm lg:max-w-md object-cover">
+        </div>
+      </div>
+    </section>
+    <section id="about" class="py-24 bg-light">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div data-aos="fade-up" class="grid lg:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-3xl font-semibold mb-6">About Annita</h2>
+            <p class="text-gray-700 leading-relaxed">Annita Tiki was born into a musical family as the daughter of renowned Greek singer and songwriter John Tikis, one of Greece's most celebrated international performers with 8 Gold Records and 15 Albums to his credit. Growing up surrounded by melodies and music, she naturally gravitated toward the arts, pursuing higher studies in piano and music theory. For years, Annita has worked as a piano teacher in the southern suburbs of Athens, particularly in Voula, sharing her love and passion for music with children and adults alike. Her approach to teaching reflects her belief that music is not just an art form but a powerful educational tool that develops intelligence, creativity, and social skills. However, Annita's journey took a transformative turn when she faced a difficult period with health challenges. This experience changed her perspective on life and awakened her to the true power she held within herself—a power we all possess. It was through this personal transformation that writing entered her life, and she discovered her calling as an author and guide for others seeking healing and self-discovery.</p>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-white p-8 rounded-3xl shadow-lg space-y-6">
+              <h3 class="text-2xl font-semibold">Philosophy & Mission</h3>
+              <p class="italic text-brand">"Through my book and my work, I want to offer a different perspective on life and help people find the strength and peace within themselves."</p>
+              <p class="text-gray-700 leading-relaxed">Annita's mission is to inspire others to recognize that:</p>
+              <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>We all hold tremendous inner power that can be awakened through life's challenges</li>
+                <li>Transformation is possible at any stage of life</li>
+                <li>Our struggles can become our greatest teachers and sources of strength</li>
+                <li>Authenticity and self-discovery are pathways to peace and fulfillment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="grid lg:grid-cols-3 gap-12">
+          <div class="lg:col-span-2">
+            <h3 class="text-2xl font-semibold mb-6">Family Heritage</h3>
+            <p class="text-gray-700 leading-relaxed">Annita comes from a distinguished artistic family. Her father, John Tikis (Tzon Tikis), is one of Greece's most celebrated international performers, with 8 Gold Records and 15 albums spanning a career of over five decades. He has performed throughout the world—in Canada, the United Kingdom, Germany, the USA, Greece, and Asia—and hosted the television show 'Let's Go Greek, Endaxi' on Channel 10 for three years in the 1980s. Her sister, Angela Tiki, is a respected astrologer who has supported Annita's book presentations and journey. Growing up in a home 'full of melodies,' Annita absorbed the artistic spirit and creative passion that now infuses all aspects of her work.</p>
+          </div>
+          <div class="flex">
+            <div class="bg-white rounded-3xl shadow-lg p-8 flex flex-col justify-center">
+              <p class="text-gray-700 leading-relaxed">Her family's legacy of artistry and resilience continues to inspire her commitment to music, writing, and guiding others toward transformative growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="book" class="py-24">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right" class="flex justify-center">
+          <img src="https://placehold.co/400x600/f0f0f0/b08f5c?text=Book+Cover" alt="Αγαπημένο μου DNA Book Cover" class="rounded-3xl shadow-xl w-full max-w-xs sm:max-w-sm object-cover">
+        </div>
+        <div data-aos="fade-left" class="space-y-6">
+          <h2 class="text-3xl font-semibold">My Book: 'Αγαπημένο μου DNA' (My Beloved DNA)</h2>
+          <p class="text-brand uppercase tracking-[0.2em] text-xs">Published by Lebee Publications, 2025</p>
+          <p class="text-gray-700 leading-relaxed">Annita's first novel, based on her own powerful true story. The book follows Eva, a young woman full of dreams who suddenly faces a life-changing trial. She moves forward, fights, and creates a beautiful reality, but fears and doubts continue to weigh on her. Twenty years later, life brings her back to the same point—but this time, she is different. The novel explores profound questions: Will she succeed? Will she follow the signs showing her the way, or will she lose herself again in the shadows of the past? Can love become the force that breaks down her old beliefs and leads her to a new beginning? How determined she is to discover her true self will determine everything. A moving novel about the power of the soul, awakening through trials, and the choices that define our lives.</p>
+          <blockquote class="border-l-4 border-brand pl-6 text-gray-700 italic leading-relaxed">"Writing came into my life after a difficult period with health issues, which made me see life from a different perspective and discover the real strength I held within me—as we all do. Through my first book, I want to offer a different view of life and help readers find the strength and peace within themselves."</blockquote>
+          <blockquote class="border-l-4 border-brand pl-6 text-gray-700 leading-relaxed">"The book has been described by local officials as 'medicine'—not a novel or fiction, but a guide to winning against what misfortune or circumstance can cause."</blockquote>
+          <a href="https://lebeepublications.gr" target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3 bg-brand text-white uppercase tracking-wide text-sm rounded-full shadow-sm transition-transform transform hover:-translate-y-0.5">Purchase from Lebee Publications</a>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="py-24 bg-light">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div class="text-center space-y-4">
+          <h2 class="text-3xl font-semibold">Services</h2>
+          <p class="text-gray-700 leading-relaxed max-w-3xl mx-auto">Curated offerings that weave together Annita's artistic heritage, transformative insights, and heartfelt dedication to guiding others.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div data-aos="fade-up" class="bg-white rounded-3xl shadow-lg p-8 space-y-4">
+            <h3 class="text-2xl font-semibold">Life Coaching & Personal Transformation</h3>
+            <p class="text-gray-700 leading-relaxed">Drawing from her own transformative journey through health challenges and personal awakening, Annita offers guidance to individuals seeking to:</p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+              <li>Discover their inner strength and authentic self</li>
+              <li>Navigate life's challenges with courage and resilience</li>
+              <li>Find peace and clarity during difficult transitions</li>
+              <li>Awaken to new perspectives and possibilities</li>
+              <li>Transform fear and doubt into empowerment</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed">Her approach is rooted in lived experience and genuine understanding of the healing process. She believes that within each person lies untapped power waiting to be discovered.</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100" class="bg-white rounded-3xl shadow-lg p-8 space-y-4">
+            <h3 class="text-2xl font-semibold">1-on-1 Meetings & Consultations</h3>
+            <p class="text-gray-700 leading-relaxed">Annita offers personalized one-on-one sessions for individuals seeking:</p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+              <li>Personal guidance through life transitions</li>
+              <li>Support in self-discovery and healing journeys</li>
+              <li>Inspiration from her transformative story</li>
+              <li>Advice on creative expression and finding your voice</li>
+            </ul>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-3xl shadow-lg p-8 space-y-4">
+            <h3 class="text-2xl font-semibold">Speaking Engagements & Conferences</h3>
+            <p class="text-gray-700 leading-relaxed">Available for:</p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+              <li>Book presentations and literary events</li>
+              <li>Motivational speaking on personal transformation</li>
+              <li>Women's empowerment events</li>
+              <li>Wellness and healing conferences</li>
+              <li>Cultural events combining music and literature</li>
+            </ul>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="300" class="bg-white rounded-3xl shadow-lg p-8 space-y-4">
+            <h3 class="text-2xl font-semibold">Piano Teaching</h3>
+            <p class="text-gray-700 leading-relaxed">Continuing her lifelong passion, Annita teaches piano to children and adults in the southern suburbs of Athens (Voula area). Her teaching philosophy emphasizes:</p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+              <li>Music as an educational and developmental tool</li>
+              <li>Cultivating love and passion for music</li>
+              <li>Supporting both technical skill and emotional expression</li>
+              <li>Making music accessible and joyful for all ages</li>
+            </ul>
+          </div>
+        </div>
+        <div class="max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+          <div class="bg-white border border-dashed border-brand rounded-3xl p-8 text-center space-y-4">
+            <h3 class="text-2xl font-semibold text-brand">Empowerment Sessions</h3>
+            <p class="text-gray-700 leading-relaxed">Personal sessions with Annita Tiki will be available soon. Stay tuned for updates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="events" class="py-24">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
+        <div data-aos="fade-up" class="space-y-6">
+          <h2 class="text-3xl font-semibold">Book Presentations & Events</h2>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Municipality of Voula (Ionia Hall, May 2025) - A packed presentation under the auspices of the Mayor of Vari-Voula-Vouliagmeni</li>
+            <li>Ktírio Technón (Arts Building) - Multiple emotional and powerful presentations</li>
+            <li>Paros Island (October 2025) - Book presentation connecting with the Aegean community</li>
+          </ul>
+          <p class="text-gray-700 leading-relaxed">Each presentation has been described as 'an evening full of soul, emotion, and feminine strength', featuring discussions moderated by journalist Magda Tsegkou, with contributions from astrologer Angela Tiki (Annita's sister), entrepreneur Maria Kalavria, and book blogger Stavros Iliopoulos. At the Voula presentation, her father, the distinguished singer John Tikis, performed beautiful songs in her honor, with Annita accompanying him on piano in a deeply moving moment.</p>
+        </div>
+        <div data-aos="fade-up" class="space-y-6">
+          <h2 class="text-3xl font-semibold">Press & Media</h2>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Huffington Post Greece</li>
+            <li>VIP News</li>
+            <li>Culture Now</li>
+            <li>Full-Time.gr</li>
+            <li>Magda's News</li>
+            <li>Various Greek cultural publications and social media platforms</li>
+          </ul>
+          <p class="text-gray-700 leading-relaxed">Recent interviews and features have highlighted her inspiring journey from health challenges to becoming an author and guide for others seeking transformation.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-24 bg-light">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div data-aos="fade-up" class="max-w-4xl mx-auto text-center space-y-6">
+          <h2 class="text-3xl font-semibold">Testimonials & Recognition</h2>
+          <blockquote class="bg-white rounded-3xl shadow-lg p-8 text-lg leading-relaxed text-gray-700">"This book is medicine, neither a novel nor fiction, nor something that comes as virtual reality from the past to go to the future—it is medicine! How can you win against what misfortune or circumstance can cause. You may have been unlucky with all this great ordeal you went through, but ultimately you were lucky because you learned much more than all of us who are here today."<span class="block mt-6 text-sm uppercase tracking-wide text-brand">– Mayor Grigoris Konstantellos, Municipality of Vari-Voula-Vouliagmeni</span></blockquote>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+          <div data-aos="fade-up" class="bg-white rounded-3xl shadow-lg p-8">
+            <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+            <form id="contactForm" class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm uppercase tracking-wide text-gray-600 mb-2">Name</label>
+                <input type="text" id="name" name="name" required class="w-full border border-light rounded-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand bg-offwhite">
+              </div>
+              <div>
+                <label for="email" class="block text-sm uppercase tracking-wide text-gray-600 mb-2">Email</label>
+                <input type="email" id="email" name="email" required class="w-full border border-light rounded-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand bg-offwhite">
+              </div>
+              <div>
+                <label for="message" class="block text-sm uppercase tracking-wide text-gray-600 mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" required class="w-full border border-light rounded-3xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand bg-offwhite"></textarea>
+              </div>
+              <button type="submit" class="w-full px-6 py-3 bg-brand text-white uppercase tracking-wide text-sm rounded-full shadow-sm transition-transform transform hover:-translate-y-0.5">Send Message</button>
+            </form>
+            <p id="formMessage" class="mt-4 text-center text-brand hidden">Thank you for your message!</p>
+          </div>
+          <div data-aos="fade-up" class="space-y-8">
+            <div class="bg-white rounded-3xl shadow-lg p-8 space-y-4">
+              <h3 class="text-2xl font-semibold">Connect & Inquire</h3>
+              <p class="text-gray-700 leading-relaxed">For speaking engagements, 1-on-1 consultations, book presentations, or piano lessons, please contact through:</p>
+              <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Instagram: @annitatiki</li>
+                <li>Publisher: Lebee Publications</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-3xl shadow-lg p-8 space-y-4">
+              <h3 class="text-2xl font-semibold">Social Media</h3>
+              <a href="https://instagram.com/annitatiki" target="_blank" rel="noopener" class="inline-flex items-center space-x-2 text-brand text-lg font-medium">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-brand">&#x1F4F7;</span>
+                <span>@annitatiki</span>
+              </a>
+            </div>
+            <div class="bg-white rounded-3xl shadow-lg p-8 space-y-4">
+              <h3 class="text-2xl font-semibold">Book Availability</h3>
+              <p class="text-gray-700 leading-relaxed">'Αγαπημένο μου DNA' is available at bookstores throughout Greece and online through:</p>
+              <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Lebee Publications: lebeepublications.gr</li>
+                <li>Major Greek bookstores</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-light py-8 bg-offwhite">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-600">
+      © <span id="year"></span> Annita Tiki. All Rights Reserved.
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-out-quart'
+    });
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const navLinks = document.querySelectorAll('a.nav-link');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (!mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    });
+    const sections = document.querySelectorAll('main section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        const links = document.querySelectorAll(`nav a[href="#${id}"]`);
+        if (entry.isIntersecting) {
+          document.querySelectorAll('nav a').forEach(a => a.classList.remove('active-link'));
+          links.forEach(link => link.classList.add('active-link'));
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+    sections.forEach(section => observer.observe(section));
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+    contactForm.addEventListener('submit', event => {
+      event.preventDefault();
+      formMessage.classList.remove('hidden');
+      contactForm.reset();
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
